@@ -167,7 +167,7 @@ a {
   padding: 6px 16px;
   border-radius: 100px;
   margin-bottom: 24px;
-  animation: fadeInUp 0.6s var(--ease) both;
+  animation: fadeInUp 1s var(--ease) both;
 }
 
 .hero__title {
@@ -176,7 +176,7 @@ a {
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 20px;
-  animation: fadeInUp 0.6s var(--ease) 0.1s both;
+  animation: fadeInUp 1s var(--ease) 0.2s both;
 }
 
 .hero__subtitle {
@@ -185,7 +185,7 @@ a {
   line-height: 1.7;
   max-width: 520px;
   margin-bottom: 32px;
-  animation: fadeInUp 0.6s var(--ease) 0.2s both;
+  animation: fadeInUp 1s var(--ease) 0.4s both;
 }
 
 .hero__actions {
@@ -193,11 +193,11 @@ a {
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 48px;
-  animation: fadeInUp 0.6s var(--ease) 0.3s both;
+  animation: fadeInUp 1s var(--ease) 0.6s both;
 }
 
 .hero__trust {
-  animation: fadeInUp 0.6s var(--ease) 0.4s both;
+  animation: fadeInUp 1s var(--ease) 0.8s both;
 }
 
 .hero__trust-label {
@@ -225,7 +225,7 @@ a {
 .hero__visual {
   display: flex;
   justify-content: center;
-  animation: fadeInUp 0.6s var(--ease) 0.3s both;
+  animation: fadeInUp 1s var(--ease) 0.5s both;
 }
 
 .hero__photo-wrapper {
@@ -366,7 +366,7 @@ a {
   padding: 0 16px;
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.6s var(--ease);
+  transition: all 1s var(--ease);
 }
 
 .workflow__step.active {
@@ -384,7 +384,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: 0 auto 16px;
-  transition: all 0.4s var(--ease);
+  transition: all 0.8s var(--ease);
   border: 2px solid transparent;
 }
 
@@ -452,7 +452,7 @@ a {
   width: 0;
   background: var(--accent);
   border-radius: 2px;
-  transition: width 0.8s var(--ease);
+  transition: width 1.4s var(--ease);
 }
 
 .workflow__connector.filled .workflow__connector-line::after {
@@ -462,7 +462,7 @@ a {
 .workflow__connector-arrow {
   color: var(--border);
   display: flex;
-  transition: color 0.4s;
+  transition: color 0.8s;
   margin-left: -4px;
 }
 
@@ -483,7 +483,7 @@ a {
   width: 0;
   background: linear-gradient(90deg, var(--accent), var(--green));
   border-radius: 4px;
-  transition: width 1s var(--ease);
+  transition: width 1.8s var(--ease);
 }
 
 /* --- Services --- */
@@ -933,7 +933,7 @@ a {
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: all 0.7s var(--ease);
+  transition: all 1.1s var(--ease);
 }
 
 .reveal--visible {

@@ -51,7 +51,7 @@
     setTimeout(function () {
       steps[0].classList.add('active');
       if (progressBar) progressBar.style.width = '15%';
-    }, 300);
+    }, 600);
 
     // Connector 1 fills
     setTimeout(function () {
@@ -59,13 +59,13 @@
       steps[0].classList.remove('active');
       if (connectors[0]) connectors[0].classList.add('filled');
       if (progressBar) progressBar.style.width = '33%';
-    }, 1500);
+    }, 2800);
 
     // Step 2: Propuesta
     setTimeout(function () {
       steps[1].classList.add('active');
       if (progressBar) progressBar.style.width = '50%';
-    }, 2200);
+    }, 4000);
 
     // Connector 2 fills
     setTimeout(function () {
@@ -73,20 +73,20 @@
       steps[1].classList.remove('active');
       if (connectors[1]) connectors[1].classList.add('filled');
       if (progressBar) progressBar.style.width = '66%';
-    }, 3400);
+    }, 6200);
 
     // Step 3: Resultados
     setTimeout(function () {
       steps[2].classList.add('active');
       if (progressBar) progressBar.style.width = '85%';
-    }, 4100);
+    }, 7400);
 
     // Complete
     setTimeout(function () {
       steps[2].classList.add('completed');
       steps[2].classList.remove('active');
       if (progressBar) progressBar.style.width = '100%';
-    }, 5300);
+    }, 9600);
   }
 
   window.addEventListener('scroll', animateWorkflow);
@@ -103,7 +103,7 @@
 
       counter.dataset.animated = 'true';
       var target = parseInt(counter.dataset.target);
-      var duration = 1800;
+      var duration = 2800;
       var start = performance.now();
 
       function update(now) {

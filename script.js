@@ -123,7 +123,7 @@
 
   // --- Scroll reveal ---
   var revealElements = document.querySelectorAll(
-    '.service-card, .client-card, .stat-card, .about__content, .about__photo-card'
+    '.service-card, .client-card, .client-card--featured, .stat-card, .about__content, .about__photo-card'
   );
 
   revealElements.forEach(function (el) {

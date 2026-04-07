@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolás Ayala — Innovación y Transformación Digital</title>
+  <meta name="description" content="Consultoría en transformación digital: Inteligencia Artificial, Automatización y Construcción de Soluciones a medida.">
+  <meta name="theme-color" content="#0a0a0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nicolás Ayala — Innovación y Transformación Digital">
+  <meta property="og:description" content="Consultoría en IA, Automatización y Construcción de Soluciones.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <!-- Animated background -->
+  <canvas id="grid-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-symbol">&gt;_</span> nicolás<span class="accent">ayala</span>
+      </a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto" class="nav__cta">Hablemos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__container">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Disponible para proyectos
+      </div>
+      <h1 class="hero__title">
+        Transformo empresas con
+        <span class="hero__title-gradient">Inteligencia Artificial</span>
+        y Automatización
+      </h1>
+      <p class="hero__subtitle">
+        Diseño e implemento soluciones que eliminan procesos manuales,
+        potencian la toma de decisiones y escalan tu operación.
+      </p>
+      <div class="hero__actions">
+        <a href="https://wa.me/+3166076150" target="_blank" rel="noopener" class="btn btn--primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Conversemos por WhatsApp
+        </a>
+        <a href="#servicios" class="btn btn--ghost">
+          Ver servicios
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="100">0</span><span class="accent">+</span>
+          <span class="hero__stat-label">Automatizaciones desplegadas</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="5">0</span><span class="accent">+</span>
+          <span class="hero__stat-label">Años en transformación digital</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="30">0</span><span class="accent">%</span>
+          <span class="hero__stat-label">Reducción promedio de costos operativos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// servicios</span>
+        <h2 class="section-title">Soluciones que impulsan resultados</h2>
+        <p class="section-desc">Cada proyecto se diseña como una pieza estratégica de tu operación, no como tecnología aislada.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card" data-service="ia">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/>
+              <path d="M9 8v2a3 3 0 006 0V8"/>
+              <path d="M12 13v3"/>
+              <path d="M8 16h8"/>
+              <path d="M8 16l-2 4"/>
+              <path d="M16 16l2 4"/>
+              <path d="M12 16v6"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Inteligencia Artificial</h3>
+          <p class="service-card__desc">
+            Implementación de modelos de IA, agentes inteligentes y pipelines de datos
+            que transforman información en decisiones accionables.
+          </p>
+          <ul class="service-card__features">
+            <li>Agentes de IA y chatbots especializados</li>
+            <li>Pipelines de procesamiento de datos</li>
+            <li>Modelos predictivos y analytics</li>
+            <li>Integración con LLMs (GPT, Claude, LLaMA)</li>
+          </ul>
+          <div class="service-card__tech">
+            <span>Python</span><span>LangChain</span><span>BigQuery</span><span>FastAPI</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-service="auto">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2v4m0 12v4M2 12h4m12 0h4"/>
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Automatización</h3>
+          <p class="service-card__desc">
+            Diseño de flujos automatizados que eliminan tareas repetitivas, conectan
+            sistemas y liberan a tu equipo para trabajo de alto valor.
+          </p>
+          <ul class="service-card__features">
+            <li>Orquestación de workflows end-to-end</li>
+            <li>Integración entre CRM, ERP y herramientas</li>
+            <li>Automatización de reportes y alertas</li>
+            <li>Procesamiento masivo de datos</li>
+          </ul>
+          <div class="service-card__tech">
+            <span>n8n</span><span>Salesforce</span><span>APIs REST</span><span>Webhooks</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-service="build">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3M3 16v3a2 2 0 002 2h3m8 0h3a2 2 0 002-2v-3"/>
+              <path d="M7 12l3 3 7-7"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Construcción de Soluciones</h3>
+          <p class="service-card__desc">
+            Desarrollo de plataformas, aplicaciones y sistemas a medida que resuelven
+            problemas específicos de tu negocio.
+          </p>
+          <ul class="service-card__features">
+            <li>Plataformas web y dashboards</li>
+            <li>APIs y microservicios</li>
+            <li>Sistemas de monitoreo y BI</li>
+            <li>Arquitectura cloud escalable</li>
+          </ul>
+          <div class="service-card__tech">
+            <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>GCP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="projects" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// proyectos</span>
+        <h2 class="section-title">Resultados que hablan</h2>
+        <p class="section-desc">Casos reales donde la tecnología se tradujo en impacto medible.</p>
+      </div>
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__number">01</span>
+            <span class="project-card__category">IA + Automatización</span>
+          </div>
+          <h3 class="project-card__title">Orquestación inteligente de operaciones financieras</h3>
+          <p class="project-card__desc">
+            Sistema completo de automatización con +100 workflows que procesan datos financieros,
+            gestionan pipelines de originación y conectan CRM con plataformas de análisis.
+          </p>
+          <div class="project-card__results">
+            <div class="project-card__result">
+              <span class="project-card__result-value">100+</span>
+              <span class="project-card__result-label">Workflows activos</span>
+            </div>
+            <div class="project-card__result">
+              <span class="project-card__result-value">80%</span>
+              <span class="project-card__result-label">Menos tareas manuales</span>
+            </div>
+          </div>
+          <div class="project-card__tags">
+            <span>n8n</span><span>Salesforce</span><span>BigQuery</span><span>FastAPI</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__number">02</span>
+            <span class="project-card__category">Plataforma BI</span>
+          </div>
+          <h3 class="project-card__title">Plataforma de monitoreo de datos en tiempo real</h3>
+          <p class="project-card__desc">
+            Dashboard de business intelligence que consolida métricas de múltiples fuentes,
+            con alertas inteligentes y reportes automatizados para la toma de decisiones.
+          </p>
+          <div class="project-card__results">
+            <div class="project-card__result">
+              <span class="project-card__result-value">Real-time</span>
+              <span class="project-card__result-label">Datos actualizados</span>
+            </div>
+            <div class="project-card__result">
+              <span class="project-card__result-value">50%</span>
+              <span class="project-card__result-label">Menos tiempo en reportes</span>
+            </div>
+          </div>
+          <div class="project-card__tags">
+            <span>React</span><span>Dataform</span><span>BigQuery</span><span>Python</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__number">03</span>
+            <span class="project-card__category">Solución a medida</span>
+          </div>
+          <h3 class="project-card__title">Motor de ML para scoring y análisis predictivo</h3>
+          <p class="project-card__desc">
+            Engine de machine learning que evalúa riesgo, genera scoring crediticio
+            y alimenta modelos de decisión automatizada en el flujo de originación.
+          </p>
+          <div class="project-card__results">
+            <div class="project-card__result">
+              <span class="project-card__result-value">Automático</span>
+              <span class="project-card__result-label">Scoring en segundos</span>
+            </div>
+            <div class="project-card__result">
+              <span class="project-card__result-value">95%</span>
+              <span class="project-card__result-label">Precisión del modelo</span>
+            </div>
+          </div>
+          <div class="project-card__tags">
+            <span>Python</span><span>LangChain</span><span>ML</span><span>FastAPI</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section class="about" id="sobre-mi">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__content">
+          <span class="section-tag">// sobre mí</span>
+          <h2 class="section-title">Nicolás Ayala</h2>
+          <p class="about__role">Innovación y Transformación Digital</p>
+          <p class="about__text">
+            Soy ingeniero especializado en transformar operaciones empresariales a través de
+            tecnología. Combino inteligencia artificial, automatización y desarrollo de software
+            para crear soluciones que no solo funcionan — que escalan.
+          </p>
+          <p class="about__text">
+            Mi enfoque es pragmático: entender el problema de negocio primero, diseñar la
+            arquitectura correcta y construir soluciones que tu equipo pueda mantener y evolucionar.
+          </p>
+          <div class="about__approach">
+            <div class="about__approach-item">
+              <span class="about__approach-number">01</span>
+              <div>
+                <h4>Diagnóstico</h4>
+                <p>Entiendo tu operación, identifico fricciones y oportunidades de alto impacto.</p>
+              </div>
+            </div>
+            <div class="about__approach-item">
+              <span class="about__approach-number">02</span>
+              <div>
+                <h4>Diseño</h4>
+                <p>Arquitecto la solución correcta con las tecnologías adecuadas para tu contexto.</p>
+              </div>
+            </div>
+            <div class="about__approach-item">
+              <span class="about__approach-number">03</span>
+              <div>
+                <h4>Implementación</h4>
+                <p>Construyo, despliego y aseguro que todo funcione en producción.</p>
+              </div>
+            </div>
+            <div class="about__approach-item">
+              <span class="about__approach-number">04</span>
+              <div>
+                <h4>Evolución</h4>
+                <p>Transfiero conocimiento y acompaño la adopción para resultados sostenibles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual">
+          <div class="about__terminal">
+            <div class="about__terminal-header">
+              <span class="about__terminal-dot"></span>
+              <span class="about__terminal-dot"></span>
+              <span class="about__terminal-dot"></span>
+              <span class="about__terminal-title">nicolas@consultoria</span>
+            </div>
+            <div class="about__terminal-body">
+              <div class="terminal-line">
+                <span class="terminal-prompt">$</span>
+                <span class="terminal-cmd">cat stack.json</span>
+              </div>
+              <pre class="terminal-output">{
+  "ia": ["LangChain", "OpenAI", "Claude",
+         "Hugging Face", "scikit-learn"],
+  "automation": ["n8n", "Salesforce Flows",
+                  "Webhooks", "Cron Jobs"],
+  "backend": ["FastAPI", "Python", "Node.js",
+              "PostgreSQL"],
+  "frontend": ["React", "TypeScript", "Tailwind"],
+  "data": ["BigQuery", "Dataform", "dbt",
+           "Pandas"],
+  "cloud": ["GCP", "Docker", "CI/CD",
+            "GitHub Actions"],
+  "crm": ["Salesforce", "Apex", "LWC",
+          "SOQL/SOSL"]
+}</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="contact__content">
+        <span class="section-tag">// contacto</span>
+        <h2 class="contact__title">
+          ¿Listo para transformar
+          <span class="hero__title-gradient">tu operación</span>?
+        </h2>
+        <p class="contact__desc">
+          Cuéntame sobre tu proyecto o el desafío que enfrentas.
+          Sin compromiso, sin jerga — solo una conversación directa sobre cómo la tecnología
+          puede resolver tu problema.
+        </p>
+        <a href="https://wa.me/+3166076150" target="_blank" rel="noopener" class="btn btn--primary btn--large">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escríbeme por WhatsApp
+        </a>
+        <p class="contact__note">Respondo en menos de 24 horas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <span class="footer__logo">
+          <span class="nav__logo-symbol">&gt;_</span> nicolás<span class="accent">ayala</span>
+        </span>
+        <p class="footer__copy">&copy; 2026 Nicolás Ayala. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

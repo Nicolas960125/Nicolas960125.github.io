@@ -517,6 +517,75 @@ a {
   border: 2px solid var(--accent);
 }
 
+/* --- Proyectos --- */
+.projects {
+  padding: 100px 0;
+  background: var(--bg-warm);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-group {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  transition: all 0.3s var(--ease);
+}
+
+.project-group:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.project-group__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.project-group__emoji {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.project-group__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.project-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-list li {
+  padding-left: 16px;
+  border-left: 2px solid var(--accent-light);
+}
+
+.project-list strong {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.project-list span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
 /* --- Clients --- */
 .clients {
   padding: 100px 0;
@@ -970,6 +1039,7 @@ a {
   .hero__trust-logos { justify-content: center; flex-wrap: wrap; }
 
   .services__grid,
+  .projects__grid,
   .clients__grid {
     grid-template-columns: 1fr;
   }

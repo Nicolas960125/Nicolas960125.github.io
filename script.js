@@ -146,6 +146,30 @@
   });
 
   // --- Smooth anchor scroll ---
+  // En móvil los proyectos arrancan colapsados; abiertos es el estado por defecto
+  // del HTML, así que sin JS no se pierde contenido.
+  var projectGroups = document.querySelectorAll('.project-group');
+
+  function collapseProjectsOnMobile() {
+    var isMobile = window.matchMedia('(max-width: 768px)').matches;
+    projectGroups.forEach(function (group, i) {
+      if (group.dataset.touched) return;
+      group.open = !isMobile || i === 0;
+    });
+  }
+
+  projectGroups.forEach(function (group) {
+    var head = group.querySelector('.project-group__head');
+    if (head) {
+      head.addEventListener('click', function () {
+        group.dataset.touched = 'true';
+      });
+    }
+  });
+
+  collapseProjectsOnMobile();
+  window.addEventListener('resize', collapseProjectsOnMobile);
+
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
       var target = document.querySelector(this.getAttribute('href'));

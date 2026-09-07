@@ -333,7 +333,8 @@ a {
   transition: all 1s var(--ease);
 }
 
-.workflow__step.active {
+.workflow__step.active,
+.workflow__step.completed {
   opacity: 1;
   transform: translateY(0);
 }
@@ -548,6 +549,19 @@ a {
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
+  list-style: none;
+}
+
+.project-group__head::-webkit-details-marker {
+  display: none;
+}
+
+.project-group__chevron {
+  display: none;
+  margin-left: auto;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: transform 0.3s var(--ease);
 }
 
 .project-group__emoji {
@@ -558,6 +572,13 @@ a {
 .project-group__title {
   font-size: 1.1rem;
   font-weight: 700;
+}
+
+/* En desktop los grupos van siempre abiertos: el summary no es un control */
+@media (min-width: 769px) {
+  .project-group__head {
+    pointer-events: none;
+  }
 }
 
 .project-list {
@@ -1042,6 +1063,45 @@ a {
   .projects__grid,
   .clients__grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Los pasos se leen sin esperar los 10 s de la animación */
+  .workflow__step {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Proyectos como acordeón: cuatro encabezados escaneables de un vistazo */
+  .project-group {
+    padding: 0;
+  }
+
+  .project-group:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--border);
+  }
+
+  .project-group__head {
+    padding: 20px 22px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  .project-group[open] .project-group__head {
+    padding-bottom: 12px;
+  }
+
+  .project-group__chevron {
+    display: block;
+  }
+
+  .project-group[open] .project-group__chevron {
+    transform: rotate(180deg);
+  }
+
+  .project-list {
+    padding: 0 22px 22px;
   }
 
   .client-card--featured {
